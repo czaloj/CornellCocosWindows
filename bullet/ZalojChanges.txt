@@ -1,0 +1,6 @@
+MiniCL/cl.h (61):
+    Changed intptr_t to ptrdiff_t
+
+Switched to generic btDbvt implementation and commented out btScalar.h SSE usage 
+
+Removed GPU and SoftBody code
