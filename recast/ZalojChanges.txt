@@ -1,0 +1,1 @@
+Not using fastlz2 due to clang intrinsics error
