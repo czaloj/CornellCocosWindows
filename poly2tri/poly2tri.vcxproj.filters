@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="poly2tri.h" />
+    <ClInclude Include="common\shapes.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="sweep\advancing_front.h">
+      <Filter>sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="sweep\cdt.h">
+      <Filter>sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="sweep\sweep.h">
+      <Filter>sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="sweep\sweep_context.h">
+      <Filter>sweep</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{63b9f4b1-a3e5-45aa-a441-65a63f72a17c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sweep">
+      <UniqueIdentifier>{76f91a3b-7c77-4e4a-93b9-2e64d09ed02c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\shapes.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="sweep\advancing_front.cc">
+      <Filter>sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="sweep\cdt.cc">
+      <Filter>sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="sweep\sweep.cc">
+      <Filter>sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="sweep\sweep_context.cc">
+      <Filter>sweep</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
