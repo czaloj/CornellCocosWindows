@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2d\CCAction.h" />
+    <ClInclude Include="2d\CCActionCamera.h" />
+    <ClInclude Include="2d\CCActionCatmullRom.h" />
+    <ClInclude Include="2d\CCActionEase.h" />
+    <ClInclude Include="2d\CCActionGrid.h" />
+    <ClInclude Include="2d\CCActionGrid3D.h" />
+    <ClInclude Include="2d\CCActionInstant.h" />
+    <ClInclude Include="2d\CCActionInterval.h" />
+    <ClInclude Include="2d\CCActionManager.h" />
+    <ClInclude Include="2d\CCActionPageTurn3D.h" />
+    <ClInclude Include="2d\CCActionProgressTimer.h" />
+    <ClInclude Include="2d\CCActionTiledGrid.h" />
+    <ClInclude Include="2d\CCActionTween.h" />
+    <ClInclude Include="2d\CCAnimation.h" />
+    <ClInclude Include="2d\CCAnimationCache.h" />
+    <ClInclude Include="2d\CCAtlasNode.h" />
+    <ClInclude Include="2d\CCAutoPolygon.h" />
+    <ClInclude Include="2d\CCCamera.h" />
+    <ClInclude Include="2d\CCCameraBackgroundBrush.h" />
+    <ClInclude Include="2d\CCClippingNode.h" />
+    <ClInclude Include="2d\CCClippingRectangleNode.h" />
+    <ClInclude Include="2d\CCComponent.h" />
+    <ClInclude Include="2d\CCComponentContainer.h" />
+    <ClInclude Include="2d\CCDrawingPrimitives.h" />
+    <ClInclude Include="2d\CCDrawNode.h" />
+    <ClInclude Include="2d\CCFastTMXLayer.h" />
+    <ClInclude Include="2d\CCFastTMXTiledMap.h" />
+    <ClInclude Include="2d\CCFont.h" />
+    <ClInclude Include="2d\CCFontAtlas.h" />
+    <ClInclude Include="2d\CCFontAtlasCache.h" />
+    <ClInclude Include="2d\CCFontCharMap.h" />
+    <ClInclude Include="2d\CCFontFNT.h" />
+    <ClInclude Include="2d\CCFontFreeType.h" />
+    <ClInclude Include="2d\CCGLBufferedNode.h" />
+    <ClInclude Include="2d\CCGrabber.h" />
+    <ClInclude Include="2d\CCGrid.h" />
+    <ClInclude Include="2d\CCLabel.h" />
+    <ClInclude Include="2d\CCLabelAtlas.h" />
+    <ClInclude Include="2d\CCLabelBMFont.h" />
+    <ClInclude Include="2d\CCLabelTextFormatter.h" />
+    <ClInclude Include="2d\CCLabelTTF.h" />
+    <ClInclude Include="2d\CCLayer.h" />
+    <ClInclude Include="2d\CCLight.h" />
+    <ClInclude Include="2d\CCMenu.h" />
+    <ClInclude Include="2d\CCMenuItem.h" />
+    <ClInclude Include="2d\CCMotionStreak.h" />
+    <ClInclude Include="2d\CCNode.h" />
+    <ClInclude Include="2d\CCNodeGrid.h" />
+    <ClInclude Include="2d\CCParallaxNode.h" />
+    <ClInclude Include="2d\CCParticleBatchNode.h" />
+    <ClInclude Include="2d\CCParticleExamples.h" />
+    <ClInclude Include="2d\CCParticleSystem.h" />
+    <ClInclude Include="2d\CCParticleSystemQuad.h" />
+    <ClInclude Include="2d\CCProgressTimer.h" />
+    <ClInclude Include="2d\CCProtectedNode.h" />
+    <ClInclude Include="2d\CCRenderTexture.h" />
+    <ClInclude Include="2d\CCScene.h" />
+    <ClInclude Include="2d\CCSprite.h" />
+    <ClInclude Include="2d\CCSpriteBatchNode.h" />
+    <ClInclude Include="2d\CCSpriteFrame.h" />
+    <ClInclude Include="2d\CCSpriteFrameCache.h" />
+    <ClInclude Include="2d\CCTextFieldTTF.h" />
+    <ClInclude Include="2d\CCTileMapAtlas.h" />
+    <ClInclude Include="2d\CCTMXLayer.h" />
+    <ClInclude Include="2d\CCTMXObjectGroup.h" />
+    <ClInclude Include="2d\CCTMXTiledMap.h" />
+    <ClInclude Include="2d\CCTMXXMLParser.h" />
+    <ClInclude Include="2d\CCTransition.h" />
+    <ClInclude Include="2d\CCTransitionPageTurn.h" />
+    <ClInclude Include="2d\CCTransitionProgress.h" />
+    <ClInclude Include="2d\CCTweenFunction.h" />
+    <ClInclude Include="audio\include\AudioEngine.h" />
+    <ClInclude Include="audio\include\Export.h" />
+    <ClInclude Include="audio\include\SimpleAudioEngine.h" />
+    <ClInclude Include="audio\win32\AudioCache.h" />
+    <ClInclude Include="audio\win32\AudioEngine-win32.h" />
+    <ClInclude Include="audio\win32\AudioPlayer.h" />
+    <ClInclude Include="audio\win32\MciPlayer.h" />
+    <ClInclude Include="base\atitc.h" />
+    <ClInclude Include="base\base64.h" />
+    <ClInclude Include="base\CCAsyncTaskPool.h" />
+    <ClInclude Include="base\CCAutoreleasePool.h" />
+    <ClInclude Include="base\ccCArray.h" />
+    <ClInclude Include="base\ccConfig.h" />
+    <ClInclude Include="base\CCConfiguration.h" />
+    <ClInclude Include="base\CCConsole.h" />
+    <ClInclude Include="base\CCController.h" />
+    <ClInclude Include="base\CCData.h" />
+    <ClInclude Include="base\CCDataVisitor.h" />
+    <ClInclude Include="base\CCDirector.h" />
+    <ClInclude Include="base\CCEvent.h" />
+    <ClInclude Include="base\CCEventAcceleration.h" />
+    <ClInclude Include="base\CCEventController.h" />
+    <ClInclude Include="base\CCEventCustom.h" />
+    <ClInclude Include="base\CCEventDispatcher.h" />
+    <ClInclude Include="base\CCEventFocus.h" />
+    <ClInclude Include="base\CCEventKeyboard.h" />
+    <ClInclude Include="base\CCEventListener.h" />
+    <ClInclude Include="base\CCEventListenerAcceleration.h" />
+    <ClInclude Include="base\CCEventListenerController.h" />
+    <ClInclude Include="base\CCEventListenerCustom.h" />
+    <ClInclude Include="base\CCEventListenerFocus.h" />
+    <ClInclude Include="base\CCEventListenerKeyboard.h" />
+    <ClInclude Include="base\CCEventListenerMouse.h" />
+    <ClInclude Include="base\CCEventListenerTouch.h" />
+    <ClInclude Include="base\CCEventMouse.h" />
+    <ClInclude Include="base\CCEventTouch.h" />
+    <ClInclude Include="base\CCEventType.h" />
+    <ClInclude Include="base\ccFPSImages.h" />
+    <ClInclude Include="base\CCGameController.h" />
+    <ClInclude Include="base\CCIMEDelegate.h" />
+    <ClInclude Include="base\CCIMEDispatcher.h" />
+    <ClInclude Include="base\ccMacros.h" />
+    <ClInclude Include="base\CCMap.h" />
+    <ClInclude Include="base\CCNinePatchImageParser.h" />
+    <ClInclude Include="base\CCNS.h" />
+    <ClInclude Include="base\CCProfiling.h" />
+    <ClInclude Include="base\CCProperties.h" />
+    <ClInclude Include="base\CCProtocols.h" />
+    <ClInclude Include="base\ccRandom.h" />
+    <ClInclude Include="base\CCRef.h" />
+    <ClInclude Include="base\CCRefPtr.h" />
+    <ClInclude Include="base\CCScheduler.h" />
+    <ClInclude Include="base\CCScriptSupport.h" />
+    <ClInclude Include="base\CCStencilStateManager.hpp" />
+    <ClInclude Include="base\CCTouch.h" />
+    <ClInclude Include="base\ccTypes.h" />
+    <ClInclude Include="base\CCUserDefault.h" />
+    <ClInclude Include="base\ccUTF8.h" />
+    <ClInclude Include="base\ccUtils.h" />
+    <ClInclude Include="base\CCValue.h" />
+    <ClInclude Include="base\CCVector.h" />
+    <ClInclude Include="base\etc1.h" />
+    <ClInclude Include="base\firePngData.h" />
+    <ClInclude Include="base\ObjectFactory.h" />
+    <ClInclude Include="base\pvr.h" />
+    <ClInclude Include="base\s3tc.h" />
+    <ClInclude Include="base\TGAlib.h" />
+    <ClInclude Include="base\uthash.h" />
+    <ClInclude Include="base\utlist.h" />
+    <ClInclude Include="base\ZipUtils.h" />
+    <ClInclude Include="cocos2d.h" />
+    <ClInclude Include="math\CCAffineTransform.h" />
+    <ClInclude Include="math\CCGeometry.h" />
+    <ClInclude Include="math\CCMath.h" />
+    <ClInclude Include="math\CCMathBase.h" />
+    <ClInclude Include="math\CCVertex.h" />
+    <ClInclude Include="math\Mat4.h" />
+    <ClInclude Include="math\MathUtil.h" />
+    <ClInclude Include="math\Quaternion.h" />
+    <ClInclude Include="math\TransformUtils.h" />
+    <ClInclude Include="math\Vec2.h" />
+    <ClInclude Include="math\Vec3.h" />
+    <ClInclude Include="math\Vec4.h" />
+    <ClInclude Include="navmesh\CCNavMesh.h" />
+    <ClInclude Include="navmesh\CCNavMeshAgent.h" />
+    <ClInclude Include="navmesh\CCNavMeshDebugDraw.h" />
+    <ClInclude Include="navmesh\CCNavMeshObstacle.h" />
+    <ClInclude Include="navmesh\CCNavMeshUtils.h" />
+    <ClInclude Include="network\CCDownloader-curl.h" />
+    <ClInclude Include="network\CCDownloader.h" />
+    <ClInclude Include="network\CCIDownloaderImpl.h" />
+    <ClInclude Include="network\HttpAsynConnection-apple.h" />
+    <ClInclude Include="network\HttpClient.h" />
+    <ClInclude Include="network\HttpConnection-winrt.h" />
+    <ClInclude Include="network\HttpCookie.h" />
+    <ClInclude Include="network\HttpRequest.h" />
+    <ClInclude Include="network\HttpResponse.h" />
+    <ClInclude Include="network\SocketIO.h" />
+    <ClInclude Include="network\WebSocket.h" />
+    <ClInclude Include="physics3d\CCPhysics3D.h" />
+    <ClInclude Include="physics3d\CCPhysics3DComponent.h" />
+    <ClInclude Include="physics3d\CCPhysics3DConstraint.h" />
+    <ClInclude Include="physics3d\CCPhysics3DDebugDrawer.h" />
+    <ClInclude Include="physics3d\CCPhysics3DObject.h" />
+    <ClInclude Include="physics3d\CCPhysics3DShape.h" />
+    <ClInclude Include="physics3d\CCPhysics3DWorld.h" />
+    <ClInclude Include="physics3d\CCPhysicsSprite3D.h" />
+    <ClInclude Include="physics\CCPhysicsBody.h" />
+    <ClInclude Include="physics\CCPhysicsContact.h" />
+    <ClInclude Include="physics\CCPhysicsHelper.h" />
+    <ClInclude Include="physics\CCPhysicsJoint.h" />
+    <ClInclude Include="physics\CCPhysicsShape.h" />
+    <ClInclude Include="physics\CCPhysicsWorld.h" />
+    <ClInclude Include="platform\CCApplication.h" />
+    <ClInclude Include="platform\CCApplicationProtocol.h" />
+    <ClInclude Include="platform\CCCommon.h" />
+    <ClInclude Include="platform\CCDevice.h" />
+    <ClInclude Include="platform\CCFileUtils.h" />
+    <ClInclude Include="platform\CCGL.h" />
+    <ClInclude Include="platform\CCGLView.h" />
+    <ClInclude Include="platform\CCImage.h" />
+    <ClInclude Include="platform\CCPlatformConfig.h" />
+    <ClInclude Include="platform\CCPlatformDefine.h" />
+    <ClInclude Include="platform\CCPlatformMacros.h" />
+    <ClInclude Include="platform\CCSAXParser.h" />
+    <ClInclude Include="platform\CCStdC.h" />
+    <ClInclude Include="platform\CCThread.h" />
+    <ClInclude Include="renderer\CCBatchCommand.h" />
+    <ClInclude Include="renderer\CCCustomCommand.h" />
+    <ClInclude Include="renderer\CCFrameBuffer.h" />
+    <ClInclude Include="renderer\CCGLProgram.h" />
+    <ClInclude Include="renderer\CCGLProgramCache.h" />
+    <ClInclude Include="renderer\CCGLProgramState.h" />
+    <ClInclude Include="renderer\CCGLProgramStateCache.h" />
+    <ClInclude Include="renderer\ccGLStateCache.h" />
+    <ClInclude Include="renderer\CCGroupCommand.h" />
+    <ClInclude Include="renderer\CCMaterial.h" />
+    <ClInclude Include="renderer\CCMeshCommand.h" />
+    <ClInclude Include="renderer\CCPass.h" />
+    <ClInclude Include="renderer\CCPrimitive.h" />
+    <ClInclude Include="renderer\CCPrimitiveCommand.h" />
+    <ClInclude Include="renderer\CCQuadCommand.h" />
+    <ClInclude Include="renderer\CCRenderCommand.h" />
+    <ClInclude Include="renderer\CCRenderCommandPool.h" />
+    <ClInclude Include="renderer\CCRenderer.h" />
+    <ClInclude Include="renderer\CCRenderState.h" />
+    <ClInclude Include="renderer\ccShaders.h" />
+    <ClInclude Include="renderer\CCTechnique.h" />
+    <ClInclude Include="renderer\CCTexture2D.h" />
+    <ClInclude Include="renderer\CCTextureAtlas.h" />
+    <ClInclude Include="renderer\CCTextureCache.h" />
+    <ClInclude Include="renderer\CCTextureCube.h" />
+    <ClInclude Include="renderer\CCTrianglesCommand.h" />
+    <ClInclude Include="renderer\CCVertexAttribBinding.h" />
+    <ClInclude Include="renderer\CCVertexIndexBuffer.h" />
+    <ClInclude Include="renderer\CCVertexIndexData.h" />
+    <ClInclude Include="storage\local-storage\LocalStorage.h" />
+    <ClInclude Include="ui\CocosGUI.h" />
+    <ClInclude Include="ui\GUIDefine.h" />
+    <ClInclude Include="ui\GUIExport.h" />
+    <ClInclude Include="ui\UIAbstractCheckButton.h" />
+    <ClInclude Include="ui\UIButton.h" />
+    <ClInclude Include="ui\UICheckBox.h" />
+    <ClInclude Include="ui\UIDeprecated.h" />
+    <ClInclude Include="ui\UIHBox.h" />
+    <ClInclude Include="ui\UIHelper.h" />
+    <ClInclude Include="ui\UIImageView.h" />
+    <ClInclude Include="ui\UILayout.h" />
+    <ClInclude Include="ui\UILayoutComponent.h" />
+    <ClInclude Include="ui\UILayoutManager.h" />
+    <ClInclude Include="ui\UILayoutParameter.h" />
+    <ClInclude Include="ui\UIListView.h" />
+    <ClInclude Include="ui\UILoadingBar.h" />
+    <ClInclude Include="ui\UIPageView.h" />
+    <ClInclude Include="ui\UIPageViewIndicator.h" />
+    <ClInclude Include="ui\UIRadioButton.h" />
+    <ClInclude Include="ui\UIRelativeBox.h" />
+    <ClInclude Include="ui\UIRichText.h" />
+    <ClInclude Include="ui\UIScale9Sprite.h" />
+    <ClInclude Include="ui\UIScrollView.h" />
+    <ClInclude Include="ui\UIScrollViewBar.h" />
+    <ClInclude Include="ui\UISlider.h" />
+    <ClInclude Include="ui\UIText.h" />
+    <ClInclude Include="ui\UITextAtlas.h" />
+    <ClInclude Include="ui\UITextBMFont.h" />
+    <ClInclude Include="ui\UITextField.h" />
+    <ClInclude Include="ui\UIVBox.h" />
+    <ClInclude Include="ui\UIVideoPlayer.h" />
+    <ClInclude Include="ui\UIWebView-inl.h" />
+    <ClInclude Include="ui\UIWebView.h" />
+    <ClInclude Include="ui\UIWebViewImpl-android.h" />
+    <ClInclude Include="ui\UIWebViewImpl-ios.h" />
+    <ClInclude Include="ui\UIWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="2d\CCAction.cpp" />
+    <ClCompile Include="2d\CCActionCamera.cpp" />
+    <ClCompile Include="2d\CCActionCatmullRom.cpp" />
+    <ClCompile Include="2d\CCActionEase.cpp" />
+    <ClCompile Include="2d\CCActionGrid.cpp" />
+    <ClCompile Include="2d\CCActionGrid3D.cpp" />
+    <ClCompile Include="2d\CCActionInstant.cpp" />
+    <ClCompile Include="2d\CCActionInterval.cpp" />
+    <ClCompile Include="2d\CCActionManager.cpp" />
+    <ClCompile Include="2d\CCActionPageTurn3D.cpp" />
+    <ClCompile Include="2d\CCActionProgressTimer.cpp" />
+    <ClCompile Include="2d\CCActionTiledGrid.cpp" />
+    <ClCompile Include="2d\CCActionTween.cpp" />
+    <ClCompile Include="2d\CCAnimation.cpp" />
+    <ClCompile Include="2d\CCAnimationCache.cpp" />
+    <ClCompile Include="2d\CCAtlasNode.cpp" />
+    <ClCompile Include="2d\CCAutoPolygon.cpp" />
+    <ClCompile Include="2d\CCCamera.cpp" />
+    <ClCompile Include="2d\CCCameraBackgroundBrush.cpp" />
+    <ClCompile Include="2d\CCClippingNode.cpp" />
+    <ClCompile Include="2d\CCClippingRectangleNode.cpp" />
+    <ClCompile Include="2d\CCComponent.cpp" />
+    <ClCompile Include="2d\CCComponentContainer.cpp" />
+    <ClCompile Include="2d\CCDrawingPrimitives.cpp" />
+    <ClCompile Include="2d\CCDrawNode.cpp" />
+    <ClCompile Include="2d\CCFastTMXLayer.cpp" />
+    <ClCompile Include="2d\CCFastTMXTiledMap.cpp" />
+    <ClCompile Include="2d\CCFont.cpp" />
+    <ClCompile Include="2d\CCFontAtlas.cpp" />
+    <ClCompile Include="2d\CCFontAtlasCache.cpp" />
+    <ClCompile Include="2d\CCFontCharMap.cpp" />
+    <ClCompile Include="2d\CCFontFNT.cpp" />
+    <ClCompile Include="2d\CCFontFreeType.cpp" />
+    <ClCompile Include="2d\CCGLBufferedNode.cpp" />
+    <ClCompile Include="2d\CCGrabber.cpp" />
+    <ClCompile Include="2d\CCGrid.cpp" />
+    <ClCompile Include="2d\CCLabel.cpp" />
+    <ClCompile Include="2d\CCLabelAtlas.cpp" />
+    <ClCompile Include="2d\CCLabelBMFont.cpp" />
+    <ClCompile Include="2d\CCLabelTextFormatter.cpp" />
+    <ClCompile Include="2d\CCLabelTTF.cpp" />
+    <ClCompile Include="2d\CCLayer.cpp" />
+    <ClCompile Include="2d\CCLight.cpp" />
+    <ClCompile Include="2d\CCMenu.cpp" />
+    <ClCompile Include="2d\CCMenuItem.cpp" />
+    <ClCompile Include="2d\CCMotionStreak.cpp" />
+    <ClCompile Include="2d\CCNode.cpp" />
+    <ClCompile Include="2d\CCNodeGrid.cpp" />
+    <ClCompile Include="2d\CCParallaxNode.cpp" />
+    <ClCompile Include="2d\CCParticleBatchNode.cpp" />
+    <ClCompile Include="2d\CCParticleExamples.cpp" />
+    <ClCompile Include="2d\CCParticleSystem.cpp" />
+    <ClCompile Include="2d\CCParticleSystemQuad.cpp" />
+    <ClCompile Include="2d\CCProgressTimer.cpp" />
+    <ClCompile Include="2d\CCProtectedNode.cpp" />
+    <ClCompile Include="2d\CCRenderTexture.cpp" />
+    <ClCompile Include="2d\CCScene.cpp" />
+    <ClCompile Include="2d\CCSprite.cpp" />
+    <ClCompile Include="2d\CCSpriteBatchNode.cpp" />
+    <ClCompile Include="2d\CCSpriteFrame.cpp" />
+    <ClCompile Include="2d\CCSpriteFrameCache.cpp" />
+    <ClCompile Include="2d\CCTextFieldTTF.cpp" />
+    <ClCompile Include="2d\CCTileMapAtlas.cpp" />
+    <ClCompile Include="2d\CCTMXLayer.cpp" />
+    <ClCompile Include="2d\CCTMXObjectGroup.cpp" />
+    <ClCompile Include="2d\CCTMXTiledMap.cpp" />
+    <ClCompile Include="2d\CCTMXXMLParser.cpp" />
+    <ClCompile Include="2d\CCTransition.cpp" />
+    <ClCompile Include="2d\CCTransitionPageTurn.cpp" />
+    <ClCompile Include="2d\CCTransitionProgress.cpp" />
+    <ClCompile Include="2d\CCTweenFunction.cpp" />
+    <ClCompile Include="audio\AudioEngine.cpp" />
+    <ClCompile Include="audio\win32\AudioCache.cpp" />
+    <ClCompile Include="audio\win32\AudioEngine-win32.cpp" />
+    <ClCompile Include="audio\win32\AudioPlayer.cpp" />
+    <ClCompile Include="audio\win32\MciPlayer.cpp" />
+    <ClCompile Include="audio\win32\SimpleAudioEngine.cpp" />
+    <ClCompile Include="base\atitc.cpp" />
+    <ClCompile Include="base\base64.cpp" />
+    <ClCompile Include="base\CCAsyncTaskPool.cpp" />
+    <ClCompile Include="base\CCAutoreleasePool.cpp" />
+    <ClCompile Include="base\ccCArray.cpp" />
+    <ClCompile Include="base\CCConfiguration.cpp" />
+    <ClCompile Include="base\CCConsole.cpp" />
+    <ClCompile Include="base\CCController-android.cpp" />
+    <ClCompile Include="base\CCController.cpp" />
+    <ClCompile Include="base\CCData.cpp" />
+    <ClCompile Include="base\CCDataVisitor.cpp" />
+    <ClCompile Include="base\CCDirector.cpp" />
+    <ClCompile Include="base\CCEvent.cpp" />
+    <ClCompile Include="base\CCEventAcceleration.cpp" />
+    <ClCompile Include="base\CCEventController.cpp" />
+    <ClCompile Include="base\CCEventCustom.cpp" />
+    <ClCompile Include="base\CCEventDispatcher.cpp" />
+    <ClCompile Include="base\CCEventFocus.cpp" />
+    <ClCompile Include="base\CCEventKeyboard.cpp" />
+    <ClCompile Include="base\CCEventListener.cpp" />
+    <ClCompile Include="base\CCEventListenerAcceleration.cpp" />
+    <ClCompile Include="base\CCEventListenerController.cpp" />
+    <ClCompile Include="base\CCEventListenerCustom.cpp" />
+    <ClCompile Include="base\CCEventListenerFocus.cpp" />
+    <ClCompile Include="base\CCEventListenerKeyboard.cpp" />
+    <ClCompile Include="base\CCEventListenerMouse.cpp" />
+    <ClCompile Include="base\CCEventListenerTouch.cpp" />
+    <ClCompile Include="base\CCEventMouse.cpp" />
+    <ClCompile Include="base\CCEventTouch.cpp" />
+    <ClCompile Include="base\ccFPSImages.c" />
+    <ClCompile Include="base\CCIMEDispatcher.cpp" />
+    <ClCompile Include="base\CCNinePatchImageParser.cpp" />
+    <ClCompile Include="base\CCNS.cpp" />
+    <ClCompile Include="base\CCProfiling.cpp" />
+    <ClCompile Include="base\CCProperties.cpp" />
+    <ClCompile Include="base\ccRandom.cpp" />
+    <ClCompile Include="base\CCRef.cpp" />
+    <ClCompile Include="base\CCScheduler.cpp" />
+    <ClCompile Include="base\CCScriptSupport.cpp" />
+    <ClCompile Include="base\CCStencilStateManager.cpp" />
+    <ClCompile Include="base\CCTouch.cpp" />
+    <ClCompile Include="base\ccTypes.cpp" />
+    <ClCompile Include="base\CCUserDefault-android.cpp" />
+    <ClCompile Include="base\CCUserDefault-winrt.cpp" />
+    <ClCompile Include="base\CCUserDefault.cpp" />
+    <ClCompile Include="base\ccUTF8.cpp" />
+    <ClCompile Include="base\ccUtils.cpp" />
+    <ClCompile Include="base\CCValue.cpp" />
+    <ClCompile Include="base\etc1.cpp" />
+    <ClCompile Include="base\ObjectFactory.cpp" />
+    <ClCompile Include="base\pvr.cpp" />
+    <ClCompile Include="base\s3tc.cpp" />
+    <ClCompile Include="base\TGAlib.cpp" />
+    <ClCompile Include="base\ZipUtils.cpp" />
+    <ClCompile Include="cocos2d.cpp" />
+    <ClCompile Include="math\CCAffineTransform.cpp" />
+    <ClCompile Include="math\CCGeometry.cpp" />
+    <ClCompile Include="math\CCVertex.cpp" />
+    <ClCompile Include="math\Mat4.cpp" />
+    <ClCompile Include="math\MathUtil.cpp" />
+    <ClCompile Include="math\Quaternion.cpp" />
+    <ClCompile Include="math\TransformUtils.cpp" />
+    <ClCompile Include="math\Vec2.cpp" />
+    <ClCompile Include="math\Vec3.cpp" />
+    <ClCompile Include="math\Vec4.cpp" />
+    <ClCompile Include="navmesh\CCNavMesh.cpp" />
+    <ClCompile Include="navmesh\CCNavMeshAgent.cpp" />
+    <ClCompile Include="navmesh\CCNavMeshDebugDraw.cpp" />
+    <ClCompile Include="navmesh\CCNavMeshObstacle.cpp" />
+    <ClCompile Include="navmesh\CCNavMeshUtils.cpp" />
+    <ClCompile Include="network\CCDownloader-curl.cpp" />
+    <ClCompile Include="network\CCDownloader.cpp" />
+    <ClCompile Include="network\HttpClient-android.cpp" />
+    <ClCompile Include="network\HttpClient-winrt.cpp" />
+    <ClCompile Include="network\HttpClient.cpp" />
+    <ClCompile Include="network\HttpConnection-winrt.cpp" />
+    <ClCompile Include="network\HttpCookie.cpp" />
+    <ClCompile Include="network\SocketIO.cpp" />
+    <ClCompile Include="network\WebSocket.cpp" />
+    <ClCompile Include="physics3d\CCPhysics3D.cpp" />
+    <ClCompile Include="physics3d\CCPhysics3DComponent.cpp" />
+    <ClCompile Include="physics3d\CCPhysics3DConstraint.cpp" />
+    <ClCompile Include="physics3d\CCPhysics3DDebugDrawer.cpp" />
+    <ClCompile Include="physics3d\CCPhysics3DObject.cpp" />
+    <ClCompile Include="physics3d\CCPhysics3DShape.cpp" />
+    <ClCompile Include="physics3d\CCPhysics3DWorld.cpp" />
+    <ClCompile Include="physics3d\CCPhysicsSprite3D.cpp" />
+    <ClCompile Include="physics\CCPhysicsBody.cpp" />
+    <ClCompile Include="physics\CCPhysicsContact.cpp" />
+    <ClCompile Include="physics\CCPhysicsJoint.cpp" />
+    <ClCompile Include="physics\CCPhysicsShape.cpp" />
+    <ClCompile Include="physics\CCPhysicsWorld.cpp" />
+    <ClCompile Include="platform\CCFileUtils.cpp" />
+    <ClCompile Include="platform\CCGLView.cpp" />
+    <ClCompile Include="platform\CCImage.cpp" />
+    <ClCompile Include="platform\CCSAXParser.cpp" />
+    <ClCompile Include="platform\CCThread.cpp" />
+    <ClCompile Include="renderer\CCBatchCommand.cpp" />
+    <ClCompile Include="renderer\CCCustomCommand.cpp" />
+    <ClCompile Include="renderer\CCFrameBuffer.cpp" />
+    <ClCompile Include="renderer\CCGLProgram.cpp" />
+    <ClCompile Include="renderer\CCGLProgramCache.cpp" />
+    <ClCompile Include="renderer\CCGLProgramState.cpp" />
+    <ClCompile Include="renderer\CCGLProgramStateCache.cpp" />
+    <ClCompile Include="renderer\ccGLStateCache.cpp" />
+    <ClCompile Include="renderer\CCGroupCommand.cpp" />
+    <ClCompile Include="renderer\CCMaterial.cpp" />
+    <ClCompile Include="renderer\CCMeshCommand.cpp" />
+    <ClCompile Include="renderer\CCPass.cpp" />
+    <ClCompile Include="renderer\CCPrimitive.cpp" />
+    <ClCompile Include="renderer\CCPrimitiveCommand.cpp" />
+    <ClCompile Include="renderer\CCQuadCommand.cpp" />
+    <ClCompile Include="renderer\CCRenderCommand.cpp" />
+    <ClCompile Include="renderer\CCRenderer.cpp" />
+    <ClCompile Include="renderer\CCRenderState.cpp" />
+    <ClCompile Include="renderer\ccShaders.cpp" />
+    <ClCompile Include="renderer\CCTechnique.cpp" />
+    <ClCompile Include="renderer\CCTexture2D.cpp" />
+    <ClCompile Include="renderer\CCTextureAtlas.cpp" />
+    <ClCompile Include="renderer\CCTextureCache.cpp" />
+    <ClCompile Include="renderer\CCTextureCube.cpp" />
+    <ClCompile Include="renderer\CCTrianglesCommand.cpp" />
+    <ClCompile Include="renderer\CCVertexAttribBinding.cpp" />
+    <ClCompile Include="renderer\CCVertexIndexBuffer.cpp" />
+    <ClCompile Include="renderer\CCVertexIndexData.cpp" />
+    <ClCompile Include="storage\local-storage\LocalStorage-android.cpp" />
+    <ClCompile Include="storage\local-storage\LocalStorage.cpp" />
+    <ClCompile Include="ui\CocosGUI.cpp" />
+    <ClCompile Include="ui\UIAbstractCheckButton.cpp" />
+    <ClCompile Include="ui\UIButton.cpp" />
+    <ClCompile Include="ui\UICheckBox.cpp" />
+    <ClCompile Include="ui\UIDeprecated.cpp" />
+    <ClCompile Include="ui\UIHBox.cpp" />
+    <ClCompile Include="ui\UIHelper.cpp" />
+    <ClCompile Include="ui\UIImageView.cpp" />
+    <ClCompile Include="ui\UILayout.cpp" />
+    <ClCompile Include="ui\UILayoutComponent.cpp" />
+    <ClCompile Include="ui\UILayoutManager.cpp" />
+    <ClCompile Include="ui\UILayoutParameter.cpp" />
+    <ClCompile Include="ui\UIListView.cpp" />
+    <ClCompile Include="ui\UILoadingBar.cpp" />
+    <ClCompile Include="ui\UIPageView.cpp" />
+    <ClCompile Include="ui\UIPageViewIndicator.cpp" />
+    <ClCompile Include="ui\UIRadioButton.cpp" />
+    <ClCompile Include="ui\UIRelativeBox.cpp" />
+    <ClCompile Include="ui\UIRichText.cpp" />
+    <ClCompile Include="ui\UIScale9Sprite.cpp" />
+    <ClCompile Include="ui\UIScrollView.cpp" />
+    <ClCompile Include="ui\UIScrollViewBar.cpp" />
+    <ClCompile Include="ui\UISlider.cpp" />
+    <ClCompile Include="ui\UIText.cpp" />
+    <ClCompile Include="ui\UITextAtlas.cpp" />
+    <ClCompile Include="ui\UITextBMFont.cpp" />
+    <ClCompile Include="ui\UITextField.cpp" />
+    <ClCompile Include="ui\UIVBox.cpp" />
+    <ClCompile Include="ui\UIVideoPlayer-android.cpp" />
+    <ClCompile Include="ui\UIWebView.cpp" />
+    <ClCompile Include="ui\UIWebViewImpl-android.cpp" />
+    <ClCompile Include="ui\UIWidget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ZalojChanges.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="2d\cocos2d.def" />
+    <None Include="base\CCController-iOS.mm" />
+    <None Include="base\CCUserDefault-apple.mm" />
+    <None Include="math\Mat4.inl" />
+    <None Include="math\MathUtil.inl" />
+    <None Include="math\MathUtilNeon.inl" />
+    <None Include="math\MathUtilNeon64.inl" />
+    <None Include="math\MathUtilSSE.inl" />
+    <None Include="math\Quaternion.inl" />
+    <None Include="math\Vec2.inl" />
+    <None Include="math\Vec3.inl" />
+    <None Include="math\Vec4.inl" />
+    <None Include="network\HttpAsynConnection-apple.m" />
+    <None Include="network\HttpClient-apple.mm" />
+    <None Include="renderer\ccShader_3D_Color.frag" />
+    <None Include="renderer\ccShader_3D_ColorNormal.frag" />
+    <None Include="renderer\ccShader_3D_ColorNormalTex.frag" />
+    <None Include="renderer\ccShader_3D_ColorTex.frag" />
+    <None Include="renderer\ccShader_3D_Particle.frag" />
+    <None Include="renderer\ccShader_3D_Particle.vert" />
+    <None Include="renderer\ccShader_3D_PositionNormalTex.vert" />
+    <None Include="renderer\ccShader_3D_PositionTex.vert" />
+    <None Include="renderer\ccShader_3D_Skybox.frag" />
+    <None Include="renderer\ccShader_3D_Skybox.vert" />
+    <None Include="renderer\ccShader_3D_Terrain.frag" />
+    <None Include="renderer\ccShader_3D_Terrain.vert" />
+    <None Include="renderer\ccShader_CameraClear.frag" />
+    <None Include="renderer\ccShader_CameraClear.vert" />
+    <None Include="renderer\ccShader_Label.vert" />
+    <None Include="renderer\ccShader_Label_df.frag" />
+    <None Include="renderer\ccShader_Label_df_glow.frag" />
+    <None Include="renderer\ccShader_Label_normal.frag" />
+    <None Include="renderer\ccShader_Label_outline.frag" />
+    <None Include="renderer\ccShader_PositionColor.frag" />
+    <None Include="renderer\ccShader_PositionColor.vert" />
+    <None Include="renderer\ccShader_PositionColorLengthTexture.frag" />
+    <None Include="renderer\ccShader_PositionColorLengthTexture.vert" />
+    <None Include="renderer\ccShader_PositionColorTextureAsPointsize.vert" />
+    <None Include="renderer\ccShader_PositionTexture.frag" />
+    <None Include="renderer\ccShader_PositionTexture.vert" />
+    <None Include="renderer\ccShader_PositionTextureA8Color.frag" />
+    <None Include="renderer\ccShader_PositionTextureA8Color.vert" />
+    <None Include="renderer\ccShader_PositionTextureColor.frag" />
+    <None Include="renderer\ccShader_PositionTextureColor.vert" />
+    <None Include="renderer\ccShader_PositionTextureColorAlphaTest.frag" />
+    <None Include="renderer\ccShader_PositionTextureColor_noMVP.frag" />
+    <None Include="renderer\ccShader_PositionTextureColor_noMVP.vert" />
+    <None Include="renderer\ccShader_PositionTexture_uColor.frag" />
+    <None Include="renderer\ccShader_PositionTexture_uColor.vert" />
+    <None Include="renderer\ccShader_Position_uColor.frag" />
+    <None Include="renderer\ccShader_Position_uColor.vert" />
+    <None Include="renderer\ccShader_UI_Gray.frag" />
+    <None Include="ui\UIVideoPlayer-ios.mm" />
+    <None Include="ui\UIWebView.mm" />
+    <None Include="ui\UIWebViewImpl-ios.mm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\clipper\clipper.vcxproj">
+      <Project>{180f596a-26b6-403a-b7a2-f18488464eec}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\ConvertUTF\ConvertUTF.vcxproj">
+      <Project>{fa145b49-110d-415b-845e-ede7c15348c3}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\edtaa3func\edtaa3func.vcxproj">
+      <Project>{bf7387a3-40af-4322-bb85-dbeaf69ae006}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\flatbuffers\flatbuffers.vcxproj">
+      <Project>{0018e739-6c4d-4ca7-94b5-a9968596df98}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\poly2tri\poly2tri.vcxproj">
+      <Project>{a47c1e2a-663a-4b1c-8703-d95d5a23a622}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\tinyxml2\tinyxml2.vcxproj">
+      <Project>{16559371-f899-48ad-b337-9909aa66151b}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\unzip\unzip.vcxproj">
+      <Project>{132d947e-711b-44fd-881d-1b7799b00a7b}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\xxhash\xxhash.vcxproj">
+      <Project>{2b84c4ef-cf8f-4cd6-b7c8-7cf173db275f}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\xxtea\xxtea.vcxproj">
+      <Project>{f24c1b99-a996-4990-b68e-097320d439f9}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{e6fe68bd-c14c-48fc-ac09-a7baf9c3ea83}</ProjectGuid>
+    <Keyword>Clang</Keyword>
+    <RootNamespace>cocos2d</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_clang_3_7</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140_clang_3_7</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)deps\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)-d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)deps\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CC_USE_PHYSICS=0;BT_NO_SIMD_OPERATOR_OVERLOADS;CC_STATIC;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CC_USE_PHYSICS=0;BT_NO_SIMD_OPERATOR_OVERLOADS;CC_STATIC;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)xxhash;$(SolutionDir)xxtea;$(SolutionDir)unzip;$(SolutionDir)edtaa3func;$(SolutionDir)tinyxml2;$(ProjectDir)audio\include;$(ProjectDir)platform;$(ProjectDir);$(ProjectDir)..;$(SolutionDir)deps\include;$(SolutionDir)deps\include\freetype2</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)xxhash;$(SolutionDir)xxtea;$(SolutionDir)unzip;$(SolutionDir)edtaa3func;$(SolutionDir)tinyxml2;$(ProjectDir)audio\include;$(ProjectDir)platform;$(ProjectDir);$(ProjectDir)..;$(SolutionDir)deps\include;$(SolutionDir)deps\include\freetype2</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</RuntimeTypeInfo>
+      <RuntimeTypeInfo Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

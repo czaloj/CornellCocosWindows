@@ -1,0 +1,19 @@
+platform\CCPlatformConfig.h (57):
+    Changed platform version to Win32
+
+ccTypes.h/cpp:
+    Added constructors for simple triangle and vertex types
+
+Removed 3D Cocos:
+    json/document.h was breaking
+
+mpg123.h (35):
+    Added typedef for off_t
+
+
+    edtaa3func
+    tinyxml
+    convertutf
+
+CCGLProgram.cpp
+    alloca to _alloca
